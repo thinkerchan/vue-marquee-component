@@ -1,5 +1,5 @@
 {
-  "name": "vue-marquee-component",
+  "name": "vue-marquee-component-fix",
   "version": "0.1.0",
   "description": "Vue跑马灯组件,支持四个方向滚动",
   "main": "dist/VueMarqueeComponent.common.js",

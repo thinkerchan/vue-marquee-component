@@ -9,8 +9,8 @@
 
 <template lang="pug">
 .marquee-container(
-  @mouseenter="enter"
-  @mouseleave="leave",
+  @mouseenter="hover && enter"
+  @mouseleave="hover && leave",
   :direction="direction",
   :style="formatStyle")
   slot
@@ -56,6 +56,10 @@ export default {
       validator(val) {
         return !Number.isNaN(val) && typeof val === "number"
       }
+    },
+    hover:{
+      type: Boolean,
+      default: () => true
     }
   },
   data() {
