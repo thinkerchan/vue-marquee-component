@@ -1,6 +1,6 @@
 {
   "name": "vue-marquee-component-fix",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Vue跑马灯组件,支持四个方向滚动",
   "main": "dist/VueMarqueeComponent.common.js",
   "unpkg": "dist/VueMarqueeComponent.umd.min.js",
@@ -57,7 +57,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Wxh16144/vue-marquee-component.git"
+    "url": "git+https://github.com/thinkerchan/vue-marquee-component.git"
   },
   "keywords": [
     "vue",
@@ -72,7 +72,7 @@
   "author": "WuXiaohong",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Wxh16144/vue-marquee-component/issues"
+    "url": "https://github.com/thinkerchan/vue-marquee-component/issues"
   },
-  "homepage": "https://github.com/Wxh16144/vue-marquee-component#readme"
+  "homepage": "https://github.com/thinkerchan/vue-marquee-component#readme"
 }

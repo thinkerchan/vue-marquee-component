@@ -1,16 +1,17 @@
 /*
- * @Author: Wuxiaohong (wxh1220@gmail.com)
+ * @Author1: Wuxiaohong (wxh1220@gmail.com)
+ * @Author2: thinkerchan (chanthinker@foxmail.com)
  * @Date: 2020-04-07 15:01:00
  * @Last Modified by: Wuxiaohong
- * @Last Modified time: 2020-04-11 00:23:22
+ * @Last Modified time: 2022-03-03 00:23:22
  * @功能:
  * @简介: 跑马灯组件
 */
 
 <template lang="pug">
 .marquee-container(
-  @mouseenter="hover && enter"
-  @mouseleave="hover && leave",
+  @mouseenter="enter"
+  @mouseleave="leave",
   :direction="direction",
   :style="formatStyle")
   slot
@@ -144,12 +145,28 @@ export default {
   methods: {
     /** 鼠标移入 */
     enter() {
+      if(this.duration===0){
+        return;
+      }
+
+      if (!this.hover) {
+        return;
+      }
+
       if (this.isRolling && this.instance) {
         this.instance.pause()
       }
     },
     /** 鼠标离开 */
     leave() {
+      if(this.duration===0){
+        return;
+      }
+
+      if (!this.hover) {
+        return;
+      }
+
       if (this.isRolling && this.instance) {
         this.instance.play()
       }
@@ -251,8 +268,11 @@ export default {
                 default:
                   return 0
               }
-            }
+            },
           })
+          anime({begin: ()=>{
+            this.duration===0 && this.instance.pause()
+          }})
         }
       })
       this.instance = anime(option)

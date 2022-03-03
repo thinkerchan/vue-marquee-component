@@ -1,16 +1,16 @@
 # vue-marquee-component
 
-[![npm](https://img.shields.io/npm/v/vue-marquee-component.svg?style=for-the-badge)](https://www.npmjs.com/package/vue-marquee-component)
-[![npm](https://img.shields.io/npm/dt/vue-marquee-component.svg?style=for-the-badge)](https://www.npmjs.com/package/vue-marquee-component)
+[![npm](https://img.shields.io/npm/v/vue-marquee-component-fix.svg?style=for-the-badge)](https://www.npmjs.com/package/vue-marquee-component-fix)
+[![npm](https://img.shields.io/npm/dt/vue-marquee-component-fix.svg?style=for-the-badge)](https://www.npmjs.com/package/vue-marquee-component-fix)
 
 ## Demo
 
-[Demo here](https://wxh16144.github.io/vue-marquee-component/)
+[Demo here](https://thinkerchan.com/vue-marquee-component-fix/)
 
 ## Install
 
 ```bash
-  npm install vue-marquee-component --save
+  npm install vue-marquee-component-fix --save
 ```
 
 ## Usage
@@ -20,7 +20,7 @@ The most common use case is to register the component globally.
 ```js
 // in your main.js or similar file
 import Vue from 'vue';
-import VueMarquee from 'vue-marquee-component';
+import VueMarquee from 'vue-marquee-component-fix';
 
 Vue.use(VueMarquee);
 ```
@@ -29,7 +29,7 @@ Alternatively you can do this to register the components:
 
 ```js
 // HelloWorld.vue
-import { Marquee, Slide } from 'vue-marquee-component';
+import { Marquee, Slide } from 'vue-marquee-component-fix';
 
 export default {
   components: {
@@ -84,8 +84,9 @@ On your page you can now use html like this:
 | Prop         | Type    | Default            | Description                                        |
 | ------------ | ------- | ------------------ | -------------------------------------------------- |
 | direction    | string  | left               | Move a few degrees (`left` `right` `top` `bottom`) |
-| duration     | Number  | Total length \* 30 | Marquee rolling direction                          |
+| duration     | Number  | Total length \* 30 | Marquee rolling direction (duration: 0 stop rolling, for modifing css in your page)  |
 | showProgress | Boolean | true               | Whether to show the progress bar                   |
+| hover | Boolean | true | mouse pointer interact |
 
 ## Important information for dynamic content
 

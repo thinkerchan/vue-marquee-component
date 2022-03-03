@@ -7,6 +7,7 @@ module.exports = {
       libraryExport: 'default'
     }
   },
+  lintOnSave:false,
   css: {
     extract: false,
   }
