@@ -1,4 +1,4 @@
-# vue-marquee-component
+# vue-marquee-component-fix
 
 [![npm](https://img.shields.io/npm/v/vue-marquee-component-fix.svg?style=for-the-badge)](https://www.npmjs.com/package/vue-marquee-component-fix)
 [![npm](https://img.shields.io/npm/dt/vue-marquee-component-fix.svg?style=for-the-badge)](https://www.npmjs.com/package/vue-marquee-component-fix)
@@ -80,6 +80,7 @@ On your page you can now use html like this:
 ```
 
 ## Props
+> update here!!!
 
 | Prop         | Type    | Default            | Description                                        |
 | ------------ | ------- | ------------------ | -------------------------------------------------- |
